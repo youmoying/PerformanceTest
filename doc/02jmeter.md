@@ -29,3 +29,38 @@
 
 * 定时器，断言，前置处理器，后置处理器，只有在使用于取样器时才会按照顺序执行
 * 控制器和取样器同层次顺序执行，同类型元件按照顺序执行
+
+
+## 实例
+
+Controller测试计划
+```* Post—Processor 1
+* Sampler 1
+* Sampler 2
+* Timer 1
+* Assertion 1
+* Pre-Processor 1
+* Timer 2
+* Post-Processor 2
+```
+
+执行顺序：
+```
+* Pre-Processor 1
+* Timer 1
+* Timer 2
+* Sampler 1
+* Post—Processor 
+* Post-Processor 2
+* Assertion 1
+
+* Pre-Processor 1
+* Timer 1
+* Timer 2
+* Sampler 2
+* Post—Processor 
+* Post-Processor 2
+* Assertion 1
+```
+
+

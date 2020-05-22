@@ -28,4 +28,4 @@
 #  配置元件
 
 *  配置元件用于设置变量默认值，供取样器后续使用，配置元件在同一范围内，首先执行；
-* CSV Data set config ，HTTP cache Manager 配置元件
+* CSV Data set config ，HTTP cache Manager ，Http header配置元件
